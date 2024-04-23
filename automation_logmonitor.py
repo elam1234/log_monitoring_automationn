@@ -3,8 +3,10 @@ import re
 import time
 import logging
 
+# configure logging in this script for debugging  a code
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+#log monitoring and send the lines in log to loganalysis function
 def log_monitor(logfile):
     logging.info("Starting to monitor the logfile: %s", logfile)  # Fix here
     try:
@@ -20,7 +22,8 @@ def log_monitor(logfile):
         logging.info("Received Ctrl+C signal. Exiting...")
     except Exception as e:
         logging.error("An error occurred while monitoring the logfile: %s", str(e))
-
+        
+# analysis the logs in the file
 def log_analysis(line):
     if 'error' in line.lower():
         error_count = line.lower().count('error')
