@@ -2,7 +2,7 @@ Automating Log Monitoring and Analysis Using Python
 
 Introduction
 Hello, I am Elamparithi M, a DevOps Engineer. I have developed a Python script to automate log monitoring and analysis as part of a DevOps intern assessment. 
-In this document, I will explain the purpose, functionality, and implementation details of the script.
+In this document, I will explain the purpose, functionality, and implementation details of the script. 
 
 Project Explanation
 The goal of this project is to automate the monitoring and analysis of application log files using Python. The script contains two primary functionalities:
